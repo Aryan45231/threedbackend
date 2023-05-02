@@ -12,7 +12,7 @@ const upload = multer({dest:"./upload"})
 // USING NECESSARY REQUIREMENTS
 dotenv.config()
   app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: "*",
     methods: ["GET", "POST  "]
 }))
 app.use(express.json())
